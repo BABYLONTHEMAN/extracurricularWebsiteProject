@@ -55,17 +55,21 @@
   </div>
   <!-- this GPT4 chat is part of this code FYI-->
 
-<frame> 
+
   
-    <ul>
-      <li id="menu-1"><a href="/admissions">تەواوی پەیوەندی</a>
-        <ul>
+  <section id="sec"> 
+      <p name="hidden11" id="menu-1"><a href="/admissions">تەواوی پەیوەندی</a>
+        <details class= "detId">
+        
+        <p name="Hidden-item-1" class="Hidden-item-1"><a href="/admissions/undergraduate">کۆلێژ</a></p>
+        <p name="Hidden-item-1" class="Hidden-item-1"><a href="/admissions/graduate">لە ماستەر بۆ دکتۆرا</a></p> 
+        <p name="Hidden-item-1" class="Hidden-item-1"><a href="/admissions/continuing-education">پەروەردەی پێوەندیدار</a></p>
+        </details> 
+      </p>
+      
+
      
-          <li class="Hidden-item-1"><a href="/admissions/undergraduate">کۆلێژ</a></li>
-          <li class="Hidden-item-1"><a href="/admissions/graduate">لە ماستەر بۆ دکتۆرا</a></li>
-          <li class="Hidden-item-1"><a href="/admissions/continuing-education">پەروەردەی پێوەندیدار</a></li>
-        </ul>
-      </li>
+
       <li class="expanded menu-mlid-2549"><a href="/research">ڕەزەرچە</a>
         <ul>
           <li class="Hidden item 3"><a href="/research/engage-with-us">بەشداربوون لەمانەوە</a></li>
@@ -98,74 +102,93 @@
 
 <style>
 /* hidden stuff*/
+
+.show:hover+.list-categories{
+  max-height: inherit;
+  opacity: 1;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease;
+}
+
+
+    a:link {
+  color: rgb(156, 188, 156);
+}
 .Hidden-item-1{
   display: none;
-  width:min-content;
+   width:min-content;
     height: min-content;
-    color-scheme: rgb(43, 177, 12);
     background-color: rgb(105, 206, 21);
-    font-size: medium;
+        
 }
-ul::hover + .Hidden-item-1::hover{
-/* ul, li::hover #menu-mlid-2711  */
-  display:visible;
-  width:min-content;
-    height: min-content;
+#detId{
+  color:orange;
+    width: calc(2% - 10px);
+    position: absolute;
+    left:40px;
+    top:380px;
 }
-  /* Style for sections */
-  /* ul,li{
-    position: relative;
-    width: auto;
-    display:none;
-    width:min-content;
-    height: min-content;
-    color-scheme: lightblue;
-    background-color: burlywood;
-    size: 0vmax;
-  } */
-  ul {
-    font-size: medium;
-    /* width: 200px; */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    /* max-width: fit-content;  */
-    margin: 2px 40px;
-    border-radius: 1%;
-    text-align: right;
-    position: relative;
-    width: auto;
-    /* display:grid; */
-    width:min-content;
-    height: min-content;
-    color-scheme: lightblue;
-    background-color: powderblue;
-    font-family: inherit;
-    font-weight: 500;
-  }
+#menu-1:hover+  .Hidden-item-1 {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+background-color: aqua;
+box-shadow: 0 0 50px #999;
+}
+#menu-1:hover+  .Hidden-item-1+  .Hidden-item-1 {
+display: block;
+background-color: aqua;
+box-shadow: 0 0 60px #999;
+}
+#menu-1:hover+  .Hidden-item-1+  .Hidden-item-1 +  .Hidden-item-1{
+display: block;
+background-color: aqua;
+}
+#menu-1:after+  .Hidden-item-1 {
+display: block;
 
-ul {
-  
-  list-style-type: none;
+}
+#menu-1:after+  .Hidden-item-1+  .Hidden-item-1 {
+display: block;
+}
+#menu-1:after+  .Hidden-item-1+  .Hidden-item-1 +  .Hidden-item-1{
+display: block;
 }
 
-  frame
-  {
 
-    
-  }
-/* 
-  li:hover
-    transform: scale(1.7); Equal to scaleX(0.7) scaleY(0.7) 
-     font-size: 10px;
-     text-shadow: #666;
-     direction: rtl;
-    text-align: right;
-  }
-   */
-section {
-	margin-top: 1px;
-  /* //direction: lr; */
-  size: 100px;
+
+#sec  /* the selectable form   */
+
+{
+  border: 1px;
+  border-radius: 8px;
+  border-style: solid;
+ border-color: #000000;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #02213a;
+    background-position: center;
+  transition: background 0.8s;
+  box-shadow: 0 0 90px #dc9e9e;
+  outline: cadetblue;
+  width: fit-content;
+  top:30px;
+  left: 760px;
+  position:absolute;
+  opacity: 10;
+ 
 }
-
 /* Style for subsections */
 .sub-section {
 	margin: 2px 0;
@@ -196,7 +219,7 @@ p {
 }
 
 </style>
-<script>
+<!-- <script>
   // Add click event listeners to all sections and subsections
 const sections = document.querySelectorAll('section, .sub-section');
 sections.forEach(section => {
@@ -206,7 +229,7 @@ sections.forEach(section => {
 	});
 });
 
-</script>
+</script> -->
           <!--*****************************************************************************************************-->
           harvard
           
@@ -243,8 +266,8 @@ $('#myCarousel').on('slide.bs.carousel', function () {
 #myCarousel{
   width:800px;
   height:360px;
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 50%;
+        max-height: 50%;
         display: block;
 }
 
@@ -266,8 +289,8 @@ $('#myCarousel').on('slide.bs.carousel', function () {
     .d#{$infix}-inline-flex  { display: inline-flex !important; }
   }
 }
-            </style> */
-          
+             */
+            </style>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">

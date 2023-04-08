@@ -1,4 +1,4 @@
-* {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,11 +15,11 @@ header {
   padding: 20px;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-}
+} */
 
 .block .jcarousel-list {
   margin: 0;
@@ -92,14 +92,14 @@ nav ul {
     }
       }
   
-nav ul li a {
+/* nav ul li a {
   color: #fff;
   text-decoration: none;
-}
+} */
 
-nav ul li a:hover {
+/* nav ul li a:hover {
   color: #ff0;
-}
+} */
 
 main {
   width: 80%;
@@ -111,10 +111,10 @@ main {
   padding: 50px;
 }
 
-.hero h1 {
+/* .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
-}
+} */
 
 .hero p {
   font-size: 1.2em;
