@@ -1,0 +1,152 @@
+* {
+  /* fill the header width */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(73, 87, 88);
+}
+
+header {
+  background-color: #333;
+  padding: 25px;
+  text-align: center;
+}
+
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2a4;
+  border-radius: 5px;
+  margin-top: 50px;
+ 
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+#question {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  animation-name: sbmt 3s linear 1s infinite alternate slidein;
+}
+
+#choices button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#choices button:hover {
+  /*background-color: #333;*/
+  color: #fff;
+  /* background-color: #2eaae3;*/
+  height: 100%;
+  background-color: #217abe;
+  box-sizing: border-box;
+}
+
+@keyframes sbmt {
+  from {
+    color: #e6d0d0;
+    transform: scale(0.9);
+  }
+
+  to {
+    color: #a0d9dd;
+    transform: scale(1);
+  }
+}
+
+#result {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#comment {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+#another {
+  text-decoration: none;
+}
+
+#progressBar {
+  width: 90%;
+  margin: 10px auto;
+  height: 22px;
+  background-color: #0A5F44;
+}
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #CBEA00;
+  box-sizing: border-box;
+}
+
+.mfk {
+
+  background-color: #ccc;
+   border-radius: 25px;
+   color: rgb(0, 34, 66);
+      /* text-align: center;*/
+   display: inline;
+  text-indent: 1000px;
+  text-orientation: 80px;
+   transform: scale(1.9); 
+  
+}
+
+.mfk:hover{
+  background-color: rgb(219, 223, 20);
+  width: calc(8% - 10px);
+  height: 100%;
+  text-align: right;
+  padding: 0 100px;
+  width: 0;
+  background-color: #CBEA00;
+  box-sizing: border-box;
+}
+
+
+
+#mfk div {
+
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* Do not take in account */

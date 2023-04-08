@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0;
+  }
+  
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .typeimages {
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 650px;
+  }
+  .types{
+    list-style: none;
+    justify-content: space-around;
+  }
+  .country{
+    text-align: left;
+    float: left;
+    margin-left: 400px;
+  }
+  .history{
+    text-align: right;
+    margin-top: 75px;
+    margin-right: 400px;
+    }
+    .mathematics{
+      text-align: left;
+      float: left;
+      margin-left: 400px;
+    }
+    .randoms{
+      text-align: right;
+      margin-top: 75px;
+      margin-right: 450px;
+      }
+      .country{
+        text-align: left;
+        float: left;
+        margin-left: 400px;
+      }
+      .history{
+        text-align: right;
+        margin-top: 75px;
+        margin-right: 400px;
+        }
+  

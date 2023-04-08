@@ -1,0 +1,45 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  #question {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  #select {
+    margin: 20px 0;
+    font-size: 24px;
+    color: red;
+  }
+
+  #choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #choices button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  #submit {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  #result {
+    margin: 20px;
+    font-size: 24px;
+  }
+  
